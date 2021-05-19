@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity"
+    android:orientation="vertical">
+
+
+
+    <RelativeLayout
+
+
+        android:id="@+id/bottom_relative"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginTop="91dp"
+        android:orientation="vertical"
+
+        >
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="50dp"
+            android:layout_centerInParent="true">
+
+
+
+
+
+
+        </androidx.cardview.widget.CardView>
+
+
+
+
+
+
+
+
+
+
+
+
+        <com.google.android.material.textfield.TextInputLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:id="@+id/phoneNo"
+            app:boxStrokeColor="@color/black"
+            app:boxStrokeWidthFocused="1dp"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+            android:hint="Admin Username"
+            app:hintTextColor="#000000"
+            android:orientation="horizontal"
+            >
+
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:inputType="phone"
+                />
+
+
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_below="@id/phoneNo"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:id="@+id/password"
+            app:boxStrokeColor="@color/black"
+            app:boxStrokeWidthFocused="1dp"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+            android:hint="Admin Password"
+            app:hintTextColor="#000000"
+            android:layout_marginTop="10dp"
+            app:passwordToggleEnabled="true"
+
+            >
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:inputType="textPassword"
+
+                />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+
+            <Button
+            android:layout_marginTop="10dp"
+            android:id="@+id/login_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/password"
+            android:text="Login"
+            android:textSize="20sp"
+            android:textAlignment="center"
+
+            android:theme="@style/Theme.Design"
+           />
+
+
+
+
+    </RelativeLayout>
+</LinearLayout>
